@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app{
+  text-align: center;
+}
+
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-image: url('https://i.pinimg.com/originals/2b/3b/04/2b3b04771ccca26c3dd96d781b0117ca.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+ background-position: center;
+ background-attachment: fixed;
+}
+
+
+
+.modalWelcome{
+ 
+  display: flex;
+ height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.modal-inicio{
+
+ background-color: black;
+ padding: 10px;
+ width: 590px;
+ overflow: hidden;
+ 
+}
+
+.modal-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+ 
+}
+
+.modal-header img{
+  width: 500px;
+  height: auto;
+ 
+ 
+}
+.modal-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  
+  
+}
+
+.modal-body button{
+  width: 200px;
+  font-size: 30px;
+
+}
+
+.rounds{
+  display: flex;
+  height: 100vh;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.cardsRounds {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  
+}
+
+.cardsRounds .red {
+  background-color: #E72324;
+}
+
+.cardsRounds .blue {
+  background-color: black;
+}
+
+.cardsRounds .green {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.cardsRounds .green p.tip {
+  color: black;
+}
+
+.cardsRounds .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.356);
+  padding: 20px;
+}
+
+.cardsRounds .card p.tip {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cardsRounds .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cardsRounds:hover>.card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+input {
+  text-align: center;
+}
+
+
+.seleccionar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: auto;
+}
+
+.input-seleccionar {
+  height: 30px;
+}
+
+
+
+.puntuacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: auto;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: auto;
+  flex-wrap: wrap;
+
+}
+
+.card .player {
+  
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  height: 200px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+
+.card-body img {
+ 
+  background-color: white;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: calc(-100px - 5px);
+  padding: 10px;
+  background-size: cover;   
+}
+
+.content-game{
+  background-color: rgba(255, 255, 255, 0.692);
+ 
+  margin: 40px;
+  border-radius: 20px;
+}
