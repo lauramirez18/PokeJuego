@@ -223,6 +223,17 @@ const playRound = async () => {
     return;
   }
 
+  if (currentRound.value >= rounds.value) {
+    isGameStarted.value = false;
+    showResultModal.value = true;
+  }else {
+     playerPokemon.value = await getpokerandom();
+  opponentPokemon.value = await getpokerandom();
+  }
+
+  errorMessage.value = '';
+  showPlayerCards.value = true;
+
   const playerStat = playerPokemon.value[selectedStat.value];
   const opponentStat = opponentPokemon.value[selectedStat.value];
 
@@ -240,23 +251,9 @@ const playRound = async () => {
 
   resultMessage.value = resultMessageText;
   battles.value.push({ result: resultMessageText });
-
-
   currentRound.value++;
 
-
-  if (currentRound.value > rounds.value) {
-    isGameStarted.value = false;
-    showResultModal.value = true;
-    return;
-  }
-
-
-  playerPokemon.value = await getpokerandom();
-  opponentPokemon.value = await getpokerandom();
-
-
-  showPlayerCards.value = true;
+ 
 };
 
 const resetGame = () => {

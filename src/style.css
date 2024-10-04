@@ -9,9 +9,10 @@
 }
 body {
   font-family: 'Kumbh Sans', sans-serif;
-  background-image: url(https://i.pinimg.com/originals/3e/ec/af/3eecafd9b790cbd721b5024da834fc01.gif);
+  background-image: url(https://i.pinimg.com/564x/27/fc/e5/27fce5547c910850afdea26d539df09b.jpg);
   background-position: center;
   background-attachment: fixed;
+
  
  
   height: 100vh;
@@ -21,7 +22,7 @@ body {
 
   background-position: center;
   background-attachment: fixed;
-  background-image: url(https://i.pinimg.com/originals/3e/ec/af/3eecafd9b790cbd721b5024da834fc01.gif);
+  background-image: url(https://i.pinimg.com/originals/68/2d/9a/682d9a4be8efd8591cccadaa8371fa58.gif);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +34,7 @@ body {
 .modal-inicio {
   display: flex;
   flex-direction: column;
-  background-image: url(https://i.pinimg.com/originals/3e/ec/af/3eecafd9b790cbd721b5024da834fc01.gif);
+  background-image: url(https://i.pinimg.com/originals/68/2d/9a/682d9a4be8efd8591cccadaa8371fa58.gif);
   padding: 15px;
   justify-content: center;
   align-items: center;
@@ -100,7 +101,7 @@ mix-blend-mode: screen;
 
 .name-modal {
   display: flex;
- background-color: rgba(0, 0, 0, 0.799);
+ background-color: rgb(0, 0, 0);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -316,7 +317,7 @@ input {
   background-color: rgba(0, 0, 0, 0.822);
   border: 5px solid; 
   border-image: radial-gradient(circle, rgba(42,0,255,1) 50%, rgba(255,218,0,1) 100%) 1;
-  box-shadow: 0px 0px 30px 5px rgba(25, 0, 255, 0.315); /* Sombra */
+  box-shadow: 0px 0px 30px 5px rgba(25, 0, 255, 0.315); 
 }
 
 
